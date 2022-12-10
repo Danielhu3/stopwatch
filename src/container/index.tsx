@@ -20,6 +20,11 @@ const Index = () => {
         setTime(0)
     }
 
+    function calculateValue( divisor:number, module:number){
+        return ('0' + Math.floor((time/divisor) % module)).slice(-2)
+
+    }
+
     React.useEffect(()=>{
         let interval:ReturnType<typeof setInterval>;
         if(isRunning){
@@ -37,9 +42,9 @@ const Index = () => {
          <Title />
 
          <Stopwatch>
-            <StopwatchTime time={('0' + Math.floor((time/60000) %60)).slice(-2)}/>
-            <StopwatchTime time={('0'+ Math.floor(time / 1000) %60).slice(-2)} />
-            <StopwatchTime time={('0' + Math.floor((time /10)  % 100)).slice(-2)}/>
+            <StopwatchTime time={calculateValue(60000, 60)}/>
+            <StopwatchTime time={calculateValue(1000, 60)} />
+            <StopwatchTime time={calculateValue(10, 100)}/>
         </Stopwatch>
 
         <Buttons>

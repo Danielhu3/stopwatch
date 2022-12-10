@@ -5,10 +5,11 @@ type Props = {
     buttonType: string;
     isRunning?: boolean;
     doOnClick?: () => void;
+
 }
 const index = ({buttonType, isRunning, doOnClick}:Props) => {
   return (
-    <Button buttonType={buttonType} isRunning={isRunning && isRunning} onClick={doOnClick}></Button>
+    <Button buttonType={buttonType} isRunning={isRunning && isRunning} onClick={doOnClick} aria-label={buttonType}></Button>
   )
 }
 
