@@ -2,11 +2,11 @@ import React from 'react'
 import { StopwatchTime } from './style'
 
 type Props = {
-    time:number;
+    time: string;
 }
 const index = ({time}:Props) => {
   return (
-    <StopwatchTime>{time}</StopwatchTime>
+    <StopwatchTime>{time ? time : '00'}</StopwatchTime>
   )
 }
 

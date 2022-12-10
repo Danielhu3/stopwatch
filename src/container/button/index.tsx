@@ -2,11 +2,13 @@ import React from 'react'
 import { Button } from './style'
 
 type Props = {
-    text: string;
+    buttonType: string;
+    isRunning?: boolean;
+    doOnClick?: () => void;
 }
-const index = ({text}:Props) => {
+const index = ({buttonType, isRunning, doOnClick}:Props) => {
   return (
-    <Button>{text}</Button>
+    <Button buttonType={buttonType} isRunning={isRunning && isRunning} onClick={doOnClick}></Button>
   )
 }
 
