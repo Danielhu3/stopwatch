@@ -28,6 +28,7 @@ Users should be able to:
 
 - Solution URL: [GitHub](https://github.com/Danielhu3/stopwatch)
 - Live Site URL: [Netlify](https://visionary-capybara-103ec5.netlify.app/)
+- Inspired design: [Figma](https://www.figma.com/file/wmhVklFCwi7foxNdHZ6t5T/Stopwatch-UI-Design-%7C-Dark-Mode-%7C-Neumorphism-(Community)?node-id=0%3A1&t=5HmEpHof8OxU7RSv-0)
 
 ## My process
 
