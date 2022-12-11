@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import play from '../../images/play.svg'
-import pause from '../../images/pause.svg'
-import reset from '../../images/reset.svg'
+import play from '../../../images/play.svg'
+import pause from '../../../images/pause.svg'
+import reset from '../../../images/reset.svg'
 export const Button = styled.button.attrs((props: {buttonType:string, isRunning?:boolean}) => props)`
     background-color: #202020;
     border: none;
@@ -21,8 +21,6 @@ export const Button = styled.button.attrs((props: {buttonType:string, isRunning?
      ${props => props.buttonType === 'playOrPause' && !props.isRunning && `
        background-position-x: 100%;
      `};
-
-    
     
 
 `
